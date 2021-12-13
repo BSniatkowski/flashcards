@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FlashCards</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html"></a> Home</li>
+                <li><a href="./collection.html">My Sets</a></li>
+                <li><a href="./createnew.html">Create New Set</a></li>
+            </ul>
+            <div class="dark-mode-btn"></div>
+        </nav>
+    </header>
+    <div class="set-info">
+        <form>
+            <div>
+                <label for="setName">Set name</label>
+                <input type="text" id="setName">
+            </div>
+            <div>
+                <label for="tags">Tags</label>
+                <input type="text" id="tags">
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+            </div>
+            <button type="reset">Clear all fields</button>
+            <button type="submit" id="createSet">Create set!</button>
+        </form>
+    </div>
+    <script src="./newSet.js"></script>
+</body>
+</html>
